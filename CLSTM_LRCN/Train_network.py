@@ -12,8 +12,8 @@ IMAGE_HEIGHT,IMAGE_WIDTH = 100,100
 seed_constant = 10
 
 #%%
-data = np.load('100_100_Thresh_new/data.npy')
-target = np.load('100_100_Thresh_new/label.npy')
+data = np.load('Path/data.npy') # Path to data.npy
+target = np.load('Path/label.npy') # Path to label.npy
 
 print(data.shape)
 print(target.shape)
@@ -34,7 +34,7 @@ model.compile(loss = 'categorical_crossentropy', optimizer = 'Adam', metrics = [
 model_training_history = model.fit(x=x_train,y = y_train, epochs = n_epochs, batch_size = bs,shuffle = True, validation_data = (x_test,y_test), callbacks = [early_stopping_callback,save_best_model_checkpoint])
 
 #%%
-model.save('models/Final_weights.h5')
+model.save('models/Final_weights.h5') # Model Weight Save Path
 
 #%%
 model_evaluation_history = model.evaluate(x_test,y_test)
