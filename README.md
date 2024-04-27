@@ -41,3 +41,20 @@ approach its accuracy was lower and was not stable as well. Therefore, in the th
 5. Middle Layer Activation Function - Relu
 6. Final Dense Layer Activation Function - SoftMax
 
+# Results
+## 1. CLSTM/LRCN Approach
+### Accuracy vs Validation Accuracy
+![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/052e8718-e2af-42eb-be02-709ede703f61)
+
+### Loss vs Validation Loss
+![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/a23f21f7-4bd6-41e9-a2bb-0cf8fac8e020)
+
+## 2. VGG16 (Transfer Learning)
+### Accuracy vs Validation Accuracy
+![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/9c4697ba-0a08-4b36-aa67-e1a373c1e5df)
+
+### Loss vs Validation Loss
+![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/5a4caf4a-23f8-4a1d-baf4-fdeb52e92afd)
+
+
+
