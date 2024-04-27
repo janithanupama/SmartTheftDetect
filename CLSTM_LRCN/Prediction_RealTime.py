@@ -10,7 +10,7 @@ IMAGE_HEIGHT,IMAGE_WIDTH = 240,320
 model = create_model(SEQUENCE_LENGTH,IMAGE_HEIGHT,IMAGE_WIDTH)
 
 #%%
-# save best weight file 
+# Load the final model
 model.load_weights(r'models\model-005.h5')
 
 #%%
