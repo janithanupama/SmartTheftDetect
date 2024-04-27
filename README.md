@@ -19,14 +19,17 @@ approach its accuracy was lower and was not stable as well. Therefore, in the th
 # Pre-processing
 1. Resizing frames to a small size (1980x1020 -> 224x224)
 2. Using Thresholding Techniques
-   I. OTSU Thresholding
+OTSU Thresholding
    ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/96d81885-f956-4a6e-9912-bc0d327b0a46)
-   II. Adaptive Mean Thresholding
+Adaptive Mean Thresholding
    ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/687b68be-8409-4bc3-86a0-14352945e653)
-4. Using REMBG Background Removal
-   Reference Background Image ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/8ee3c6d3-1612-40d0-abb0-0e2728b85ab1)
-   Input Image ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/65314d83-248b-4ca9-bd15-ca2b044522bf)
-   Substracted Image ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/c1bdc9ee-e33f-4231-9739-96e901019ad9)
+3. Using REMBG Background Removal
+## Reference Background Image 
+![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/8ee3c6d3-1612-40d0-abb0-0e2728b85ab1)
+## Input Image 
+![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/65314d83-248b-4ca9-bd15-ca2b044522bf)
+## Substracted Image 
+![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/c1bdc9ee-e33f-4231-9739-96e901019ad9)
 
 6. Normalizing Resized frames
 7. Applying One Hot Encoding labels
