@@ -18,8 +18,25 @@ approach its accuracy was lower and was not stable as well. Therefore, in the th
 
 # Pre-processing
 1. Resizing frames to a small size (1980x1020 -> 224x224)
-2. Applying Image 
-3. Normalizing Resized frames
-4. Applying One Hot Encoding labels
-5. Train-Test Split of Data
+2. Using Thresholding Techniques
+   I. OTSU Thresholding
+   ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/96d81885-f956-4a6e-9912-bc0d327b0a46)
+   II. Adaptive Mean Thresholding
+   ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/687b68be-8409-4bc3-86a0-14352945e653)
+4. Using REMBG Background Removal
+   Reference Background Image ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/8ee3c6d3-1612-40d0-abb0-0e2728b85ab1)
+   Input Image ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/65314d83-248b-4ca9-bd15-ca2b044522bf)
+   Substracted Image ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/c1bdc9ee-e33f-4231-9739-96e901019ad9)
+
+6. Normalizing Resized frames
+7. Applying One Hot Encoding labels
+8. Train-Test Split of Data
+
+# Training
+1. Convolution 2D Layers - Extract spatial features from the frames in the video and creating an activation map.
+2. LSTM Layers - Use features extracted by Convolution layers, to predict the action being performed in the video.
+3. Dropout Layers - Used to prevent overfitting of the model (Reduce the dimensions of the frames).
+4. Flatten Layer - To flatten features extracted by the Conv2D layers. Converting the data into a 1-dimensional array for inputting it to the next layer.
+5. Middle Layer Activation Function - Relu
+6. Final Dense Layer Activation Function - SoftMax
 
