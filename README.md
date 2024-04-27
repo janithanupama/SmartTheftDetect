@@ -55,5 +55,7 @@ approach its accuracy was lower and was not stable as well. Therefore, in the th
 ### Loss vs Validation Loss
 ![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/5a4caf4a-23f8-4a1d-baf4-fdeb52e92afd)
 
+# Final Implementation
+![image](https://github.com/janithanupama/SmartTheftDetect/assets/166873374/6b08a565-374b-42ba-a4b2-4a94c433dc6d)
 
 
